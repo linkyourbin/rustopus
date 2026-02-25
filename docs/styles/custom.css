@@ -25,3 +25,8 @@
   height: 3.75rem !important;
   max-width: 9rem !important;
 }
+
+.rp-home-feature__icon img[src*="Espressif"],
+.rp-home-feature__icon img[src*="Raspberry"] {
+  height: 5rem !important;
+}
