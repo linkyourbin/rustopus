@@ -3,13 +3,13 @@ import { defineConfig } from '@rspress/core';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  title: 'Rustmcu',
-  description: 'Rust for MCU - 嵌入式 Rust 开发教程',
-  icon: '/logo/rustmcu-icon.png',
+  title: 'Rustopus',
+  description: 'Rustopus - 嵌入式 Rust 开发教程',
+  icon: '/logo/rustopus.png',
   globalStyles: path.join(__dirname, 'docs/styles/custom.css'),
   logo: {
-    light: '/logo/rustmcu-light.png',
-    dark: '/logo/rustmcu-dark.png',
+    light: '/logo/rustopus-light.png',
+    dark: '/logo/rustopus-dark.png',
   },
   themeConfig: {
     nav: [
