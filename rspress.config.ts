@@ -6,7 +6,17 @@ export default defineConfig({
   title: 'Rustopus',
   description: 'Rustopus - 嵌入式 Rust 开发教程',
   icon: '/logo/rustopus.png',
-  globalStyles: path.join(__dirname, 'docs/styles/custom.css'),
+  builderConfig: {
+    html: {
+      tags: [
+        {
+          tag: 'link',
+          attrs: { rel: 'stylesheet', href: '/custom.css' },
+          append: true,
+        },
+      ],
+    },
+  },
   logo: {
     light: '/logo/rustopus-light.png',
     dark: '/logo/rustopus-dark.png',
