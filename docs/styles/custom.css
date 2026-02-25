@@ -1,0 +1,27 @@
+.rspress-logo {
+  height: 3.2rem !important;
+}
+
+.rp-home-hero__image img {
+  transition: opacity 0.3s ease;
+}
+
+.rp-home-hero__image img:hover {
+  opacity: 0.3;
+}
+
+.rp-home-feature__icon {
+  border-radius: 0.75rem !important;
+  min-width: auto !important;
+  min-height: auto !important;
+  padding: 0.5rem !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.rp-home-feature__icon img,
+.rp-home-feature__icon svg {
+  width: auto !important;
+  height: 3.75rem !important;
+  max-width: 9rem !important;
+}
