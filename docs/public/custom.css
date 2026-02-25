@@ -10,6 +10,11 @@
   opacity: 0.3;
 }
 
+.rp-home-feature__title-wrapper {
+  align-items: center !important;
+  width: 100% !important;
+}
+
 .rp-home-feature__icon {
   border-radius: 0.75rem !important;
   min-width: auto !important;
@@ -22,11 +27,16 @@
 .rp-home-feature__icon img,
 .rp-home-feature__icon svg {
   width: auto !important;
-  height: 3.75rem !important;
-  max-width: 9rem !important;
+  height: 5rem !important;
+  max-width: none !important;
+  object-fit: contain !important;
 }
 
-.rp-home-feature__icon img[src*="Espressif"],
-.rp-home-feature__icon img[src*="Raspberry"] {
-  height: 5rem !important;
+.rp-home-feature__detail {
+  text-align: center !important;
+}
+
+.rp-home-feature__card {
+  align-items: center !important;
+  text-align: center !important;
 }
