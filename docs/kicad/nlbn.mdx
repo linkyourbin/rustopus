@@ -3,17 +3,21 @@ title: 'NLBN 工具使用详述'
 ---
 
 # 简介
+
 > `NLBN`是一个用来从立创商城快速导出/下载元件库的工具，这些元件库可以直接导入`KiCAD`进行`PCB`绘制，但`3D`模型是通用的，你也可以将`3D`模型导入到`Altium Designer(AD)`或者其他支持`step`格式和`wrl`格式的`EDA`中使用。注意：仅测试过`KiCAD`和`AD`。
 
 ![](/kicad/nlbn.png)
 
 # 版本
+
 **NLBN**一共有两个“版本”可供使用。第一种方式是当作命令行工作来使用；为了照顾大多数人的使用习惯，我也顺手进行了封装，为大家提供一个`GUI`应用。
 
 # 如何安装
 此工具只在`windows`上进行过测试，并通过测试。若你是通过`cargo install nlbn`在自己的平台进行安装，一般来说都能正常使用，若是下载相应`release`，则需要自行测试。
 注意：所有的`release`均是通过配置`action`得到的。
+
 ## 命令行工具
+
 1. 电脑上存在`Rust`开发环境
 - 使用`cargo install nlbn`进行安装
 ```bash
@@ -23,6 +27,7 @@ cargo install nlbn
 - 下载[`nlbn release`](https://github.com/linkyourbin/nlbn/releases/tag/v1.0.6)
 
 ## GUI工具
+
 需要特别说明的是，只对`Windows`和`Linux(ubuntu distro)`进行了测试，`MAC`用户若想尝试，也可自行下载安装。
 > 这里特别感谢`emoji`老弟在`Ubuntu`物理机上进行测试。😊
 
