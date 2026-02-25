@@ -127,6 +127,10 @@ export default defineConfig({
               text: '概述',
               link: '/kicad/',
             },
+            {
+              text: 'NLBN 工具',
+              link: '/kicad/nlbn',
+            },
           ],
         },
       ],
