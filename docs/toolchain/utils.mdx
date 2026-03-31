@@ -24,9 +24,21 @@ rustup component add llvm-tools
 ```
 包含以下这些工具
 
-```bash
-`cargo-cov.exe`, `cargo-nm.exe`, `cargo-objcopy.exe`, `cargo-objdump.exe`, `cargo-profdata.exe`, `cargo-readobj.exe`, `cargo-size.exe`, `cargo-strip.exe`, `rust-ar.exe`, `rust-as.exe`, `rust-cov.exe`, `rust-ld.exe`, `rust-lld.exe`, `rust-nm.exe`, `rust-objcopy.exe`, `rust-objdump.exe`, `rust-profdata.exe`, `rust-readobj.exe`, `rust-size.exe`, `rust-strip.exe`
-```
+| Cargo 封装工具 | Rust 原生底层工具 |
+| -------------- | ----------------- |
+| `cargo-cov.exe` | `rust-ar.exe`     |
+| `cargo-nm.exe`  | `rust-as.exe`     |
+| `cargo-objcopy.exe` | `rust-cov.exe` |
+| `cargo-objdump.exe` | `rust-ld.exe`  |
+| `cargo-profdata.exe` | `rust-lld.exe` |
+| `cargo-readobj.exe` | `rust-nm.exe`  |
+| `cargo-size.exe`   | `rust-objcopy.exe` |
+| `cargo-strip.exe`  | `rust-objdump.exe` |
+|                    | `rust-profdata.exe` |
+|                    | `rust-readobj.exe`  |
+|                    | `rust-size.exe`     |
+|                    | `rust-strip.exe`    |
+
 使用`cargo-size `查看固件大小
 
 ```bash
