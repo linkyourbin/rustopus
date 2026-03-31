@@ -45,7 +45,7 @@ export default defineConfig({
       },
       {
         text: 'Tools',
-        link: 'tools/',
+        link: '/utils/',
       },
       {
         text: 'NordicSemi',
@@ -133,17 +133,17 @@ export default defineConfig({
           ],
         },
       ],
-      '/tools/': [
+      '/utils/': [
         {
           text: 'Tools',
           items: [
             {
               text: '概述',
-              link: '/tools/',
+              link: '/utils/',
             },
             {
               text: 'NLBN+SEEX 工具',
-              link: '/tools/nlbn',
+              link: '/utils/nlbn',
             },
           ],
         },

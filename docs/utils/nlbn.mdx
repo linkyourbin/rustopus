@@ -3,8 +3,8 @@ title: 'NLBN+SEEX食用指南'
 ---
 
 <div style={{ display: "flex", gap: "20px" }}>
-  <img src="/tools/seex_nlbn/nlbn.png" alt="nlbn" style={{ flex: 1, maxWidth: "50%" }} />
-  <img src="/tools/seex_nlbn/seex.png" alt="seex" style={{ flex: 1, maxWidth: "50%" }} />
+  <img src="/utils/seex_nlbn/nlbn.png" alt="nlbn" style={{ flex: 1, maxWidth: "50%" }} />
+  <img src="/utils/seex_nlbn/seex.png" alt="seex" style={{ flex: 1, maxWidth: "50%" }} />
 </div>
 
 ## 简介
@@ -25,34 +25,34 @@ title: 'NLBN+SEEX食用指南'
 
 1. 打开`SEEX`，此应用默认就是置顶状态，方便查看器件收集情况，软件可切换中英文显示，降低使用难度。
 2. 打开立创商城网页，挑选你所需要的器件，点击复制按钮。
-![](/tools/seex_nlbn/step_01.png)
+![](/utils/seex_nlbn/step_01.png)
 3. 设置导出路径，并且导出，若是还未安装`NLBN`，`SEEX`也会进行提示，并且给出仓库路径，自行下载安装即可。
-![](/tools/seex_nlbn/step_02.png)
+![](/utils/seex_nlbn/step_02.png)
 4. 随即会弹出终端，自动运行`NLBN`，此时可以看到具体的导出进度，也会提示未成功导出的器件编号。
-![](/tools/seex_nlbn/step_03.png)
+![](/utils/seex_nlbn/step_03.png)
 在上图中，提示`C7470157`器件未成功导出，复制其编号，到立创商城检索，发现该器件并没有绘制原理图和封装。
-![](/tools/seex_nlbn/seex_nlbn/failed_component.png)
+![](/utils/seex_nlbn/seex_nlbn/failed_component.png)
 5. 导入`KiCad`进行验证。
     1. 新建一个`KiCad`工程。
     2. 配置路径
-    ![](/tools/seex_nlbn/config_path.png)
+    ![](/utils/seex_nlbn/config_path.png)
     注意：这里的`name`需要和你的导出目录保持一致，例如我的导出目录是`nlbn_test_lib`，当前演示所使用的是`KiCad 10.0`，在填写这里的`name`字段时，会自动大写，一个解决办法是直接复制导出目录的文件名，粘贴即可。
     3. 配置`symbol`路径
     这里就可以直接点击红色箭头指示的文件夹图标，选择导出目录下`xxx.kicad_sym`文件即可。
-    ![](/tools/seex_nlbn/symbol_path.png)
+    ![](/utils/seex_nlbn/symbol_path.png)
     4. 配置`footprint`路径
     同`symbol`路径一样，直接选择`xxx.pretty`文件夹即可。
-    ![](/tools/seex_nlbn/footprint_path.png)
+    ![](/utils/seex_nlbn/footprint_path.png)
     5. 打开原理图，添加器件，更新到`PCB`，查看封装和`3D`模型。
-    ![](/tools/seex_nlbn/sch_overview.png)
+    ![](/utils/seex_nlbn/sch_overview.png)
     我们在使用`SEEX`收集器件编号的时候一共是`11`个，但是有一个是不存在原理图和封装的，所以本次一共导出了`10`个器件，与图里也完全能对应上。
-    ![](/tools/seex_nlbn/sch_done.png)
+    ![](/utils/seex_nlbn/sch_done.png)
     原理图添加完成。
-    ![](/tools/seex_nlbn/pcb_01.png)
+    ![](/utils/seex_nlbn/pcb_01.png)
     更新到`PCB`无报错。
-    ![](/tools/seex_nlbn/pcb_02.png)
+    ![](/utils/seex_nlbn/pcb_02.png)
     封装显示正常。
-    ![](/tools/seex_nlbn/3d.png)
+    ![](/utils/seex_nlbn/3d.png)
     `3D`模型显示正常，部分模型可能会稍有偏移，手动调整即可。
 6. 结尾
 如果你需要使用`SEEX`+`NLBN`组合来完成较为严肃的项目，还请一一核对所有器件导出后的原理图和封装信息，毕竟有时候源头上就是错误的封装，继续导出也还是得到错误的封装。必要时你也可以查看源码，
