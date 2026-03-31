@@ -44,8 +44,8 @@ export default defineConfig({
         link: '/rp/',
       },
       {
-        text: 'KiCAD',
-        link: '/kicad/',
+        text: 'Tools',
+        link: 'tools/',
       },
       {
         text: 'NordicSemi',
@@ -66,16 +66,20 @@ export default defineConfig({
               link: '/toolchain/',
             },
             {
-              text: 'STM32环境搭建',
-              link: '/toolchain/stm32-dev-env-setup',
+              text: 'Rust开发环境',
+              link: '/toolchain/rust_dev_base_env',
+            },
+            {
+              text: 'Cortex-M内核单片机开发环境',
+              link: '/toolchain/cortex-m',
             },
             {
               text: 'ESP32环境搭建',
               link: '/toolchain/esp32-dev-setup',
             },
             {
-              text: 'RP Pico环境搭建',
-              link: '/toolchain/rpx-picox-dev-setup',
+              text: '实用工具安装',
+              link: '/toolchain/utils',
             },
           ],
         },
@@ -129,17 +133,17 @@ export default defineConfig({
           ],
         },
       ],
-      '/kicad/': [
+      '/tools/': [
         {
-          text: 'KiCAD',
+          text: 'Tools',
           items: [
             {
               text: '概述',
-              link: '/kicad/',
+              link: '/tools/',
             },
             {
-              text: 'NLBN 工具',
-              link: '/kicad/nlbn',
+              text: 'NLBN+SEEX 工具',
+              link: '/tools/nlbn',
             },
           ],
         },
@@ -171,7 +175,7 @@ export default defineConfig({
       {
         icon: 'bilibili',
         mode: 'link',
-        content: 'https://space.bilibili.com/3493142393260061?spm_id_from=333.1007.0.0',
+        content: 'https://space.bilibili.com/3493142393260061',
       },
       {
         icon: 'github',

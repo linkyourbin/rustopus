@@ -4,7 +4,7 @@ title: '配置ESP32模板工程，此后的所有工程均可按此流程配置'
 
 # 使用`esp-generate`生成一个初始工程
 
-> 进行此实验前，务必先查看[基础环境搭建](/toolchain/stm32-dev-env-setup/)，完成之后，继续完成[ESP32 Rust环境搭建](/toolchain/esp32-dev-setup/)
+> 进行此实验前，务必先查看[基础环境搭建](/toolchain/rust_dev_base_env/)，完成之后，继续完成[ESP32 Rust环境搭建](/toolchain/esp32-dev-setup/)
 
 完成以上步骤之后,来到合适的文件目录下，最好是新建一个目录用于存放工程，在此目录下打开终端，输入以下命令，并按下回车（`Enter`）。也可以先输入`esp-generate`，按下回车（`Enter`）之后，再根据提示一步一步选择。
 

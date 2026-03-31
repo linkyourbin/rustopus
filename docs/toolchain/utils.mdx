@@ -1,0 +1,37 @@
+---
+title: "实用工具安装"
+---
+
+## 下载/调试工具
+配合`cargo`可以一键下载运行程序，也可以单独使用，用于烧录并复位芯片。
+
+```bash
+cargo install probe-rs-tools
+```
+### 单独使用`probe-rs`
+
+```bash
+# 将xxx.elf固件烧录到目标芯片
+probe-rs download xxx.elf --chip STM32F405RG
+# 复位目标芯片
+probe-rs reset --chip STM32F405RG
+```
+## 零碎工具
+
+```bash
+cargo install cargo-binutils
+rustup component add llvm-tools
+```
+包含以下这些工具
+
+```bash
+`cargo-cov.exe`, `cargo-nm.exe`, `cargo-objcopy.exe`, `cargo-objdump.exe`, `cargo-profdata.exe`, `cargo-readobj.exe`, `cargo-size.exe`, `cargo-strip.exe`, `rust-ar.exe`, `rust-as.exe`, `rust-cov.exe`, `rust-ld.exe`, `rust-lld.exe`, `rust-nm.exe`, `rust-objcopy.exe`, `rust-objdump.exe`, `rust-profdata.exe`, `rust-readobj.exe`, `rust-size.exe`, `rust-strip.exe`
+```
+使用`cargo-size `查看固件大小
+
+```bash
+D:\MCU-Projects\STM32-Projects\RUST\h7\embassy\embassy_h7_blink>cargo size
+    Finished `dev` profile [optimized + debuginfo] target(s) in 0.16s
+   text    data     bss     dec     hex filename
+  31488      80    5532   37100    90ec embassy_h7_blink
+```

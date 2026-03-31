@@ -1,0 +1,42 @@
+---
+title: '一分钟，搭建`Cortex-M+Rust`开发环境'
+---
+
+## 注意
+
+这一部分非常简单，完成了[Rust开发环境](/toolchain/rust_dev_base_env/)搭建后，复制以下命令到命令行进行安装即可。
+
+---
+
+## 命令整理
+
+以下给出一些安装命令，方便复制直接安装。
+
+```bash
+# M0/M0+内核芯片，常见芯片：STM32F0xx，PY32F0xx，....
+rustup target add thumbv6m-none-eabi
+```
+```bash
+# M3内核芯片，常见芯片：STM32F1xx，...
+rustup target add thumbv7m-none-eabi
+```
+```bash
+# M4和M7内核芯片，常见芯片：STM32F4xx，...
+rustup target add thumbv7em-none-eabi
+```
+```bash
+# M4F和M7F内核芯片，F意指带有浮点运算，常见芯片：STM32F4xx，STM32G4xx，STM32H7xx，...
+rustup target add thumbv7em-none-eabihf
+```
+```bash
+# M33F内核芯片，常见芯片，树莓派Pico 2, RP2350
+rustup target add thumbv8m.main-none-eabihf
+```
+
+---
+
+## 总结
+
+对于本博客会涉及到的所有芯片，其`target`都在上述`命令整理`里列举出来了，推荐直接全部安装。
+
+---
