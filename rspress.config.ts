@@ -112,8 +112,8 @@ export default defineConfig({
               link: '/stm32/',
             },
             {
-              text: '点亮LED',
-              link: '/stm32/blinky',
+              text: '寄存器点灯',
+              link: '/stm32/svd2rust',
             },
           ],
         },

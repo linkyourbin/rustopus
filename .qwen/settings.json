@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(timeout *)",
+      "Bash(tasklist *)",
+      "Bash(taskkill *)",
+      "Bash(dir *)",
+      "Bash(python *)",
+      "Bash(git checkout *)",
+      "Bash(netstat *)",
+      "WebFetch(rspress.dev)",
+      "WebFetch(github.com)"
+    ]
+  },
+  "$version": 3
+}
